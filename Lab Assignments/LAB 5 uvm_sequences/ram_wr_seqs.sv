@@ -55,7 +55,7 @@ class ram_rand_wr_xtns extends ram_wbase_seq ;// ram_wbase_seq ;
   
   task body();
     // send 10 transactions
-    int i = 0;
+    int i = 1;
     repeat(10) begin
       $display("ten consecutive address writes 0-9");
     req = write_xtn::type_id::create("req");
